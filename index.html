@@ -1,0 +1,125 @@
+
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>EduPro — Onlayn kurslar</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <header class="header">
+    <a href="#" class="logo">Edu<span>Pro</span></a>
+    <nav>
+      <a href="#courses">Kurslar</a>
+      <a href="#about">Biz haqimizda</a>
+      <a href="#contact">Aloqa</a>
+    </nav>
+    <a href="#contact" class="nav-btn">Boshlash</a>
+  </header>
+
+  <main>
+    <section class="hero" id="about">
+      <div class="hero-text">
+        <span class="tag">Kelajagingizni bugun boshlang</span>
+        <h1>Bilimingizni oshiring, <span>kelajagingizni yarating!</span></h1>
+        <p>Eng zamonaviy kasblarni tajribali ustozlardan o‘rganing va orzuyingizdagi kasbga bir qadam yaqinlashing.</p>
+        <a href="#courses" class="primary-btn">Kurslarni ko‘rish →</a>
+        <div class="stats">
+          <div><strong>1200+</strong><small>O‘quvchilar</small></div>
+          <div><strong>15+</strong><small>Professional kurslar</small></div>
+          <div><strong>95%</strong><small>Mamnuniyat</small></div>
+        </div>
+      </div>
+      <div class="hero-card">
+        <div class="hero-icon">🎓</div>
+        <h2>O‘rganish vaqti keldi!</h2>
+        <p>Bugun boshlang — ertaga natijaga erishing.</p>
+        <div class="progress"><span></span></div>
+        <small>Kelajak sari birinchi qadam</small>
+      </div>
+    </section>
+
+    <section class="courses section" id="courses">
+      <div class="section-heading">
+        <span class="tag">Bizning kurslar</span>
+        <h2>O‘zingizga mos kursni tanlang</h2>
+        <p>Yangi bilimlar va imkoniyatlar sari yo‘l oling.</p>
+      </div>
+
+      <div class="course-grid">
+        <article class="course-card">
+          <div class="course-icon purple">💻</div>
+          <span class="level">Boshlang‘ich</span>
+          <h3>Frontend dasturlash</h3>
+          <p>HTML, CSS va JavaScript yordamida zamonaviy saytlar yarating.</p>
+          <div class="course-info">⏱ 3 oy <span>📚 36 ta dars</span></div>
+          <div class="price">450 000 so‘m <small>/ oy</small></div>
+          <button class="enroll-btn" data-course="Frontend dasturlash">Kursga yozilish →</button>
+        </article>
+
+        <article class="course-card featured">
+          <div class="course-icon pink">🎨</div>
+          <span class="level">Ommabop</span>
+          <h3>UI/UX dizayn</h3>
+          <p>Figma orqali chiroyli interfeyslar va qulay dizaynlar yarating.</p>
+          <div class="course-info">⏱ 2 oy <span>📚 24 ta dars</span></div>
+          <div class="price">400 000 so‘m <small>/ oy</small></div>
+          <button class="enroll-btn" data-course="UI/UX dizayn">Kursga yozilish →</button>
+        </article>
+
+        <article class="course-card">
+          <div class="course-icon yellow">🐍</div>
+          <span class="level">Boshlang‘ich</span>
+          <h3>Python dasturlash</h3>
+          <p>Dasturlash asoslari va Python yordamida amaliy loyihalar yarating.</p>
+          <div class="course-info">⏱ 3 oy <span>📚 30 ta dars</span></div>
+          <div class="price">500 000 so‘m <small>/ oy</small></div>
+          <button class="enroll-btn" data-course="Python dasturlash">Kursga yozilish →</button>
+        </article>
+      </div>
+    </section>
+
+    <section class="contact section" id="contact">
+      <div class="section-heading">
+        <span class="tag">Biz bilan bog‘laning</span>
+        <h2>O‘qishni boshlashga tayyormisiz?</h2>
+        <p>Ma’lumotlaringizni qoldiring, siz bilan bog‘lanamiz.</p>
+      </div>
+
+      <form id="contact-form">
+        <label for="name">Ismingiz</label>
+        <input id="name" name="name" type="text"
+          placeholder="Ismingizni kiriting" required>
+
+        <label for="phone">Telefon raqamingiz</label>
+        <input id="phone" name="phone" type="tel"
+          placeholder="+998 90 123 45 67" required>
+
+        <label for="course">Kursni tanlang</label>
+        <select id="course" name="course" required>
+          <option value="">Kursni tanlang</option>
+          <option>Frontend dasturlash</option>
+          <option>UI/UX dizayn</option>
+          <option>Python dasturlash</option>
+        </select>
+
+        <label for="message">Xabaringiz</label>
+        <textarea id="message" name="message"
+          placeholder="Savolingizni yozing..." rows="3"></textarea>
+
+        <button class="primary-btn submit-btn" type="submit">
+          Ariza yuborish →
+        </button>
+        <p id="form-message" aria-live="polite"></p>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <a href="#" class="logo">Edu<span>Pro</span></a>
+    <p>© 2026 EduPro. Barcha huquqlar himoyalangan.</p>
+  </footer>
+</body>
+</html>
